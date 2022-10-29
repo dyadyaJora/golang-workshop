@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -11,5 +12,5 @@ func main() {
 }
 
 func greet(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Hello!")
+	fmt.Fprintf(w, "Hello from %s\n!", time.Now())
 }
