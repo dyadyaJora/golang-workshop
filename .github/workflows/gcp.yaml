@@ -9,7 +9,7 @@ jobs:
     name: Build and Push to GCP
     runs-on: ubuntu-latest
     env:
-      PROJECT_NAME: ${{ github.ACTOR }}
+      PROJECT_NAME: dyadyajora #${{ github.ACTOR }}
       CONNECTOR_NAME: devfest-kutaisi
       REPO_NAME: devfest-kutaisi
       REGION: us-central1
